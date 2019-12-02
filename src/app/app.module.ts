@@ -13,6 +13,7 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { AdressComponent } from './adress/adress.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'products/:productId',component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent},
       {path: 'shipping', component: ShippingComponent},
+      { path: 'adress', component: AdressComponent},
 
     ])
   ],
@@ -35,7 +37,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductDetailsComponent,
     CartComponent,
     HolaMundoComponent,
-    ShippingComponent
+    ShippingComponent,
+    AdressComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]

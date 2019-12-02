@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class CartService {
  items = [];
+ adresses = [];
 
   addToCart(product) {
     this.items.push(product);
@@ -14,6 +15,14 @@ export class CartService {
 
   getItems() {
     return this.items;
+  }
+
+   getAdresses() {
+    return this.adresses;
+  }
+
+  addToAdressList(adress) {
+    this.adresses.push(adress[adress]);
   }
 
   clearCart() {
@@ -24,7 +33,7 @@ export class CartService {
   getShippingPrices() {
     return this.http.get('/assets/shipping.json');
   }
-  
+
   constructor(private http: HttpClient) { }
 
 }
