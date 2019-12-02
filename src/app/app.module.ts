@@ -11,7 +11,6 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
-import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { AdressComponent } from './adress/adress.component';
 
@@ -36,7 +35,6 @@ import { AdressComponent } from './adress/adress.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    HolaMundoComponent,
     ShippingComponent,
     AdressComponent
   ],
